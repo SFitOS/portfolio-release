@@ -1,0 +1,362 @@
+@font-face {
+    font-family: "StymieXBd";
+    src: url(../fonts/StymieXBd.ttf);
+}
+
+/* header */
+
+body{
+    margin: 0;
+}
+
+.layout-header{
+    display: flex;
+    justify-content: space-between;
+    width: 950px;
+    margin: 0 auto;
+    align-items: center;    
+}
+.header-top{
+    background-color: #000000;
+    padding: 25px 0 25px 0;
+    background-image: url('../pic/lines.png');
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo-name {
+font-size: 44px;
+}
+
+.logo-name a{
+    display: block;
+    position: relative;
+    background: url('../pic/DesignCompany.png');
+    width: 260px;
+    height: 42px;
+    background-repeat: no-repeat;
+    text-indent: -9000px;
+}
+.logo-slogan h4{
+    color: #949494;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+#header .search{
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-field{
+	width: 160px;
+	height: 27px;
+	float: left;
+	border: none;
+	background: none;
+	box-sizing: border-box;
+	padding-left: 10px;
+    outline: none;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: inset 3px 3px 0 0 #eee;
+    
+}
+.search-field:active{
+    color: #fff;
+}
+    
+.button{
+    position: absolute;
+    float: right;
+	padding: 0 10px;
+	height: 27px;
+	border: none;
+	border-radius: 5px;
+	font: 10px "Arial";
+	color: #ffffff;
+	font-weight: bold;
+	background: linear-gradient(#00c2e9,#0098d7);
+	outline: none;
+}
+.button:active {
+    background: #1e1e1e;
+    color: #ffffff;    
+}
+
+.header-bottom{
+	background: linear-gradient(#009cc8,#00b0e2);
+}
+
+.nav {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.nav ul {
+    display: flex;
+    padding: 0;  
+    margin: 0;   
+}
+
+
+#header ul li{
+    text-decoration: none;
+    font: bold 14px/15px "Arial", Helvetica, sans-serif;
+    position: relative;
+    box-sizing: border-box;
+    content: visible;
+    list-style: none;
+}
+
+nav li:hover{
+	color: #ffffff;
+    background: linear-gradient(#1a1a1a, #333333); 
+    z-index: 10;    
+}
+.nav-active{
+	display: block;
+	background: #333333; 
+}
+.nav-active:after{
+    position: absolute;
+    border-radius: 0 0 5px 5px;
+    z-index: 10000000000;
+    content: '';
+    display: block;
+    height: 10px;
+    width: 100%;
+    bottom: -10px;
+    left: 0;
+    background: #333333;
+}
+
+#header ul a{
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 16px;
+    
+}    
+    
+
+/* main */
+
+#main {
+    background-color: #eeeeee;
+}
+.main-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 950px;
+    padding: 20px 0 0 0;
+}
+.title-text{
+    font-size: 44px;
+    margin:0 0 20px 0;
+    font-family: "StymieXBd", Arial, Helvetica, sans-serif;
+    background: linear-gradient(#646464, #020202);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.block-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 0 20px 0;
+}
+#main .frame-content{
+    width: 310px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+}
+#main .block-content a{
+    display: inline-block;
+    width: 250px;
+    align-content: center;
+    padding: 30px;   
+    text-decoration: none;
+}
+#main img{
+    padding: 4px;
+    border: 1px solid #ebebeb;
+    background-color: #f8f8f8;
+    margin: 0 0 5px 0;
+    
+}
+
+#main a h4{
+    font-size: 24px;
+    font-family: "Arial";
+    font-weight: bold;
+    color: #222222;
+    margin: 0 0 5px 0;
+}
+
+#main a h4:after{
+    display: block;
+    content: "";
+    height: 1px;
+    width: 250px;
+    background: url('../pic/dotted.png') repeat-x;
+    position: relative;
+    bottom: -5px;     
+    margin: 0 0 15px 0;
+}
+
+/* #main .dotted{
+    background: url('../pic/dotted.png') repeat-x;
+    height: 1px;
+    margin: 0 0 10px 0;
+} */
+
+#main a p{
+    font-size: 12px;
+    font-family: "Arial";
+    color: #a2a2a2;
+    margin: 0;
+}
+
+#main .pagination {
+    align-self: center;
+    display: flex;
+    list-style: none;
+    margin: 0 0 33px 0;
+    padding: 0;
+}
+.pagination button{
+    background: #00b0e2;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    outline: none;
+    font: 12px "Arial";
+}
+#main .pagelist{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 0;
+}
+
+#main .pagelist li{
+    display: inline-block;
+    padding: 5px 10px;
+    font: 12px "Arial";
+}
+#main .pagelist a{
+    color: #868686;
+    
+}
+
+#main .pagelist li:hover {
+	background: #1e1e1e;
+	color: #fff;
+}
+#main .pagelist li:hover a{
+    color: #fff;
+    
+}
+.pagination button:hover{
+	background: #1e1e1e;
+	color: #fff;
+}
+#main .pagelist li:active {
+	background: #1e1e1e;
+	color: #fff;
+}
+#main .pagelist .active{
+	background: #1e1e1e;
+	color: #fff;
+	cursor: default;
+}
+#main .pagelist .active a{
+    color: #fff;
+}    
+    
+    /* aside */
+
+
+#aside{
+    background-color: #1e1e1e;
+}
+.aside-wrapper{
+    width: 950px;
+    margin: 0 auto;    
+}
+
+#aside h3{
+    margin-top: 0;
+}
+#aside .latest-news{
+    display: flex;
+    justify-content: space-around;
+}
+
+.news {
+    width: 312px;
+	padding: 17px 21px 25px 20px;
+	box-sizing: border-box;
+}
+
+.news h3{
+    font: 24px/24px "StymieXBd", Arial, Helvetica, sans-serif;
+	margin: 0;
+    color: #f4f4f4;
+    margin-bottom: 10px;
+}
+
+.news footer{
+    float: right;
+}
+
+.news p{
+    color: #cccccc;
+    margin: 0;
+    font-size: 12px;
+    font-family: "Arial", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    font-style: normal;
+    margin-bottom: 9px;
+    padding-bottom: 8px;
+	border-bottom: 1px dotted #535353;
+}
+
+
+article a{
+    color: #00b0e2;
+}
+article .blue-words{
+    color: #00b0e2;    
+}
+article .white-words{
+    color: #eeeeee;
+    font-weight: bold;
+}
+
+/* footer */
+
+#footer{
+    background: #000000;
+}
+
+.footer-info{
+	font: 12px "Arial";
+	color: #666;
+    padding: 31px 0 36px 0;
+    width: 950px;
+    margin: 0 auto;
+    text-align: center;
+}
